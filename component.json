@@ -1,0 +1,8 @@
+{
+    "environment": "stage",
+    "name": "pip-clients-entry-app",
+    "short_name": "entry",
+    "registry": "pipregistry.azurecr.io/pip-clients",
+    "version": "1.0.0",
+    "build": 2
+}

@@ -1,0 +1,18 @@
+<pip-root-layout>
+  <!-- Content -->
+  <pip-root-content>
+      <!-- Appbar -->
+      <pip-appbar>
+          <pip-breadcrumb> </pip-breadcrumb>
+      </pip-appbar>
+      <!-- Main -->
+      <pip-main-layout-alt fxFlex="grow">
+          <pip-main-content>
+              <pip-shadow [visible]="(config$ | async).shadows.top" attachmentSide="top"></pip-shadow>
+              <pip-shadow [visible]="(config$ | async).shadows.left" attachmentSide="left"></pip-shadow>
+              <pip-shadow [visible]="(config$ | async).shadows.right" attachmentSide="right"></pip-shadow>
+              <router-outlet></router-outlet>
+          </pip-main-content>
+      </pip-main-layout-alt>
+  </pip-root-content>
+</pip-root-layout>

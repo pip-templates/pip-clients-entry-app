@@ -1,0 +1,16 @@
+:host {
+    display: flex;
+    flex: 1 1 100%;
+    /deep/ pip-signup mat-card {
+        box-shadow: none!important;
+        background: transparent!important;
+        
+    }
+    /deep/ mat-card-content {
+        &>div, & h2.pip-title {
+            text-align: center;
+            font-weight: 400;
+            font-size: 1em;
+        }
+    }
+}

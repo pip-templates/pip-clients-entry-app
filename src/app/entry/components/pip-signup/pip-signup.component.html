@@ -1,0 +1,5 @@
+<pip-signup [serverUrl]="serverUrl$ | async" imageUrl="assets/logo.png" [title]="'SIGNUP.APPNAME' | translate"
+            [showUrl]="false" [error]="error$ | async" [loading]="loading$ | async" [signinText]="'SIGNUP.TEXT' | translate"
+            [signinLinkText]="'SIGNUP.LINK.TEXT' | translate" [signupName]="'SIGNUP.TITLE' | translate" (signin)="onSignin()"
+            (submit)="onSubmit($event)">
+</pip-signup>

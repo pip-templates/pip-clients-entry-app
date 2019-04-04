@@ -1,0 +1,9 @@
+<pip-signin [serverUrl]="sessionConfig?.serverUrl" imageUrl="assets/logo.png" [email]="email" [error]="error$ | async" [loading]="loading$ | async"
+            [password]="password" passwordPattern="^\w{3,}$" [title]="'SIGNIN.APPNAME' | translate" [showUrl]="false" [changeServerUrlName]="'SIGNIN.CHANGE.SERVER.URL' | translate"
+            [serverUrlName]="'SIGNIN.SERVER.URL.NAME' | translate" [serverUrlRequired]="'SIGNIN.SERVER.URL.REQUIRED' | translate"
+            [serverUrlInvalid]="'SIGNIN.SERVER.URL.INVALID' | translate" [emailName]="'SIGNIN.EMAIL.NAME' | translate"
+            [emailRequired]="'SIGNIN.EMAIL.REQUIRED' | translate" [emailInvalid]="'SIGNIN.EMAIL.INVALID' | translate"
+            [passwordName]="'SIGNIN.PASSWORD.NAME' | translate" [passwordRequired]="'SIGNIN.PASSWORD.REQUIRED' | translate"
+            [passwordInvalid]="'SIGNIN.PASSWORD.INVALID' | translate" [signinName]="'SIGNIN.TITLE' | translate"
+            [abortName]="'SIGNIN.ABORT' | translate" (submit)="onSubmit($event)" (abort)="onAbort()" (signup)="onSignup()">
+</pip-signin>
